@@ -3,12 +3,12 @@
 ==============================================================================
 Table of Contents                         *case-swap-table-of-contents*
 
-1. Case Swap               |case-swap-docs-setup|
+1. Case Swap               |case-swap-docs|
   - Setup                  |case-swap-docs-setup|
   - Using it               |case-swap-docs-using-it|
 
 ==============================================================================
-1. Case Swap               *case-swap-docs-setup*
+1. Case Swap               *case-swap-docs
 
 SETUP                      *case-swap-docs-setup*
 
