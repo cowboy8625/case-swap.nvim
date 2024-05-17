@@ -1,12 +1,4 @@
 ---@class Config
----@field opt table<string, any>
----@field opt.server string
----@field opt.port number
----@field opt.nickname string
----@field opt.username string
----@field opt.realname string
----@field opt.password string
----@field opt.channels string[]
 local config = {
   opt = {},
 }
