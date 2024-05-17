@@ -1,0 +1,24 @@
+*case-swap-nvim.txt*     For Neovim >= 0.9.0    Last change: 2024 May  4
+
+==============================================================================
+Table of Contents                         *case-swap-nvim-table-of-contents*
+
+1. Case Swap               |case-swap-docs-setup|
+  - Setup                  |case-swap-docs-setup|
+  - Using it               |case-swap-docs-using-it|
+
+==============================================================================
+1. Case Swap               *case-swap-docs-setup*
+
+SETUP                      *case-swap-docs-setup*
+
+```lua
+{ 'cowboy8625/case-swap.nvim' },
+```
+
+USING IT                   *case-swap-docs-using-it*
+
+sws                        caseSwap  -> case_swap
+sws                        case_swap -> caseSwap
+
+vim:tw=78:ts=8:noet:ft=help:norl:
