@@ -34,7 +34,7 @@ M.replace_word_under_cursor = function(new_word)
   return replaced_word
 end
 
-M.case_camel_to_snake_case = function()
+M.case_camel_to_snake = function()
   local word = vim.fn.expand("<cword>")
   local new_word = word:gsub("%u", function(c)
     return "_" .. c:lower()
