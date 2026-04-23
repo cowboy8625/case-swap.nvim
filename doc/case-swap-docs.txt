@@ -1,24 +1,53 @@
-*case-swap-docs.txt*     For Neovim >= 0.9.0    Last change: 2024 May 17
+*case-swap-docs.txt*     For Neovim >= 0.9.0    Last change: 2026 Apr 22
 
 ==============================================================================
 Table of Contents                         *case-swap-table-of-contents*
 
 1. Case Swap               |case-swap-docs|
   - Setup                  |case-swap-docs-setup|
-  - Using it               |case-swap-docs-using-it|
+  - Default Keymaps        |case-swap-docs-default-keymaps|
+  - Commands               |case-swap-docs-commands|
 
 ==============================================================================
 1. Case Swap               *case-swap-docs
 
 SETUP                      *case-swap-docs-setup*
 
+**Lazy**
 ```lua
-{ 'cowboy8625/case-swap.nvim' },
+{
+  'cowboy8625/case-swap.nvim'
+  config = function()
+  -- Default Options
+  require('case-swap').setup({
+    default_keymaps = true
+  })
+  end
+},
+
 ```
 
-USING IT                   *case-swap-docs-using-it*
+**Native**
+For version 0.12 you can use the native package manager see :help vim.pack
+```lua
+vim.pack.add({ 'https://github.com/cowboy8625/case-swap.nvim' })
+-- Default Options
+require('case-swap').setup({
+  default_keymaps = true
+})
+```
 
-sws                        caseSwap  -> case_swap
-swc                        case_swap -> caseSwap
+Default Keymaps            *case-swap-docs-default-keymaps*
+
+<leader>css                        any word to snake_case
+<leader>csc                        any word to camelCase
+<leader>cst                        any word to TitleCase
+<leader>csk                        any word to kebab-case
+
+Commands                   |case-swap-docs-commands|
+                           |CaseSwap|
+
+:CaseSwap {args}           Run CaseSwap command {args} can be any of the cases
+                           as an {args} 'title' | 'snake' |  'camel' | 'kebab'
 
 vim:tw=78:ts=8:noet:ft=help:norl:
