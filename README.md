@@ -28,10 +28,10 @@ require('case-swap').setup({
 
 **Default Keymaps**
 
-<leader>css                        any word to snake_case
-<leader>csc                        any word to camelCase
-<leader>cst                        any word to TitleCase
-<leader>csk                        any word to kebab-case
+- `<leader>css` any word to snake_case
+- `<leader>csc` any word to camelCase
+- `<leader>cst` any word to TitleCase
+- `<leader>csk` any word to kebab-case
 
 ### **Commands**
 
