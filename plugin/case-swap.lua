@@ -131,17 +131,19 @@ end, {
     end,
 })
 
-vim.keymap.set("n", "<leader>css", function()
-    M.case_swap_cmd("snake")
-end, { desc = "[C]ase [S]wap [S]nake", silent = true })
-vim.keymap.set("n", "<leader>csc", function()
-    M.case_swap_cmd("camel")
-end, { desc = "[C]ase [S]wap [C]amel", silent = true })
-vim.keymap.set("n", "<leader>cst", function()
-    M.case_swap_cmd("title")
-end, { desc = "[C]ase [S]wap [T]itle", silent = true })
-vim.keymap.set("n", "<leader>csk", function()
-    M.case_swap_cmd("kebab")
-end, { desc = "[C]ase [S]wap [K]ebab", silent = true })
+if case_swap.config.default_keybindings then
+    vim.keymap.set("n", "<leader>css", function()
+        M.case_swap_cmd("snake")
+    end, { desc = "[C]ase [S]wap [S]nake", silent = true })
+    vim.keymap.set("n", "<leader>csc", function()
+        M.case_swap_cmd("camel")
+    end, { desc = "[C]ase [S]wap [C]amel", silent = true })
+    vim.keymap.set("n", "<leader>cst", function()
+        M.case_swap_cmd("title")
+    end, { desc = "[C]ase [S]wap [T]itle", silent = true })
+    vim.keymap.set("n", "<leader>csk", function()
+        M.case_swap_cmd("kebab")
+    end, { desc = "[C]ase [S]wap [K]ebab", silent = true })
+end
 
 return M
